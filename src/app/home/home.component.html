@@ -2,4 +2,13 @@
 <div class="test">
     <h1>chao mung den voi Angular</h1>
     <h2>Xin chao ban {{name}}</h2>
+    <input value="{{name}}" />
+    <br />
+    <input [value]="age" title="day la {{name}}" />
+    <br />
+    <input [value]="name" [title]="'day la ' + name" />
+
+    <h2 *ngif="age > 18">Ban gia qua roi</h2>
+    <h2 *ngIf="age <= 18">Ban con tre qua</h2>
+
 </div>
